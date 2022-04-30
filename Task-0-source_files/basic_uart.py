@@ -65,6 +65,16 @@ print("Now watch the LEDs on the board!");
 
 # TODO-Exercise: Change it to a for-loop in which you make a running-led light, so the lighted up led moves
 #                from left to right (that can be entirely done here in the python script)
+for i in range(5):
+    ser.write(b's')
+    ser.write(b'1')
+    time.sleep(0.5)
+    ser.write(b's')
+    ser.write(b'2')
+    time.sleep(0.5)
+    ser.write(b's')
+    ser.write(b'4')
+    time.sleep(0.5)
 
 time.sleep(1)
 ser.write(b's')
@@ -89,8 +99,8 @@ ser.write(b'S')
 ser.write(b'g')
 
 #TODO-Exercise turn LEDs off again
-#ser.write(b'?')
-#ser.write(b'?')
+ser.write(b's')
+ser.write(b'/0')
 
 ser.close()
 
