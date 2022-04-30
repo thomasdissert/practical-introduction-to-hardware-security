@@ -54,8 +54,8 @@ ser.write(b'\0')
 # TODO-Exercise: Uncomment the two following code lines and adapt the hardware design, so you can send "A"
 # from the board to here. The following code receives two bytes from the boad through uart, timeout is in
 # seconds as defined above. Then data is printed as ascii characters.
-#data = ser.read(2)
-#print(data.decode('ascii'))
+data = ser.read(2)
+print(data.decode('ascii'))
 
 # TODO-Exercise: Adapt it so you can send two characters, like "AB"
 # ???

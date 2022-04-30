@@ -71,7 +71,7 @@ module top_level (
            // we enable to transmit something back to the PC
            TX_ENABLE <= 1;
            // we transmit back 0x80
-           DATA_TO_TX <= 'h80;
+           DATA_TO_TX <= "A";
            // We set the start_bit register, which we use to signal, that
            // we react to the next character sent (see the first condition)
            start_bit <= 1;
